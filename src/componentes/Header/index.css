@@ -1,0 +1,279 @@
+.navbar {
+    background-image: linear-gradient(180deg, #000 0%, #FFFFFF00 100%) !important;
+    height: 80px !important;
+    width: 100% !important;
+    position: fixed !important;
+    top: 0 !important;
+}
+
+.navbar.active {
+    background: linear-gradient(180deg, #059d0ac7 0%, #059d0a 100%) !important
+}
+
+.navbar-logo {
+    color: #fff !important;
+    justify-self: start !important;
+    margin-left: 20px !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    font-size: 2rem !important;
+    width: 100px;
+    padding: 10px;
+}
+
+.img-header-logo {
+    margin-top: 80px;
+    width: 100px;
+}
+
+.navbar-collapse {
+    -ms-flex-preferred-size: 100% !important;
+    flex-basis: 100% !important;
+    -webkit-box-flex: 1 !important;
+    -ms-flex-positive: 1 !important;
+    flex-grow: 1 !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+}
+
+.navbar-nav {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+    -ms-flex-direction: column !important;
+    flex-direction: column !important;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    list-style: none !important;
+}
+
+.nav-item>.nav-link {
+    font-size: 15px !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    opacity: 1 !important;
+}
+
+.nav-links {
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.nav-links:hover {
+    background-color: #1888ff !important;
+    border-radius: 4px !important;
+    transition: all 0.2s ease-out !important;
+}
+
+.fa-bars {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: var(--white);
+}
+
+.nav-links-mobile {
+    display: none !important;
+}
+
+.menu-icon {
+    display: none !important;
+}
+
+.nav-link.active {
+    color: var(--orange) !important;
+    font-weight: bold !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--orange);
+}
+
+.dropdown-item>.nav-link {
+    color: var(--dark);
+}
+
+.flags {
+    width: 20px;
+    height: 10px;
+}
+
+
+.btn:focus,
+.btn.focus {
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: transparent !important;
+    background-color: transparent !important;
+    border-color: none !important;
+}
+
+
+
+#language-selector.dropdown-toggle,
+btn.btn-transparent::after {
+    color: #FFF;
+}
+
+
+
+.menuvertigo {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    display: none;
+    position: absolute;
+    z-index: 10;
+    color: #555;
+    display: block;
+}
+
+.dropdown-menu {
+    background-clip: text !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+}
+
+.drpwdpwm-menu {
+    width: 100vw;
+}
+
+.nav-link {
+    color: var(--dark);
+}
+
+.tittle-categoria-header {
+    position: relative;
+    color: var(--dark);
+    font-size: 12px;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.tittle-categoria-header::after {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid var(--primary);
+    width: 10rem;
+    bottom: 0;
+    left: 0;
+}
+
+.dropdown-menu.show {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .NavbarItems {
+        position: relative !important;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        height: 90vh !important;
+        position: absolute !important;
+        top: 80px !important;
+        left: -100% !important;
+        opacity: 1 !important;
+        transition: all 0.5s ease !important;
+    }
+
+    .nav-menu.active {
+        background: #242222 !important;
+        left: 0 !important;
+        opacity: 1 !important;
+        transition: all 0.5s ease !important;
+        z-index: 1 !important;
+    }
+
+    .nav-links {
+        text-align: center !important;
+        padding: 2rem !important;
+        width: 100% !important;
+        display: table !important;
+    }
+
+    .nav-links:hover {
+        background-color: #1888ff !important;
+        border-radius: 0 !important;
+    }
+
+    .navbar-logo {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        transform: translate(25%, 50%) !important;
+    }
+
+    .menu-icon {
+        display: block !important;
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        transform: translate(-100%, 60%) !important;
+        font-size: 1.8rem !important;
+        cursor: pointer !important;
+    }
+
+    .fa-times {
+        color: #fff !important;
+        font-size: 2rem !important;
+    }
+
+    .nav-links-mobile {
+        display: block !important;
+        text-align: center !important;
+        padding: 1.5rem !important;
+        margin: 2rem auto !important;
+        border-radius: 4px !important;
+        width: 80% !important;
+        background: #1888ff !important;
+        text-decoration: none !important;
+        color: #fff !important;
+        font-size: 1.5rem !important;
+    }
+
+    .nav-links-mobile:hover {
+        background: #fff !important;
+        color: #1888ff !important;
+        transition: 250ms !important;
+    }
+}
